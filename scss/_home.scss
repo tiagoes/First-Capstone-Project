@@ -1,24 +1,42 @@
-// main image wrap
+.section2 {
+    margin-top: 3em;
+    h5 {
+        color: color(secondary-color);
+        font-size: text(main-title);
+        text-align: center;
 
-.main-image_container {
-    // padding-top: 100px;
-    background-image: url(./images/mainImage.jpg);
-    background-size: cover;
-    background-position: left bottom;
-    height: 30em;
-    @include flex(row);
-}
-
-.main-image_container form {
-    @include box;
-    @include flex(column);
-    align-items: flex-start;
-    max-width: 450px;
-    margin: auto;
-    padding: 25px;
-
-    label {
-        color: color(primary-color);
     }
 
+    .section2-container {
+        width: 80%;
+        margin-top: 3em;
+        margin: 3em auto 10em auto;
+        @include desktop {
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
+    }
 }
+
+.section2-card {
+    padding: 2em;
+    text-align: center;
+
+        span{
+            color: color(secondary-color);
+        }
+
+        h4 {
+            // color: color(secondary-color);
+            font-size: text(secondary-title);
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 1em 0;
+        }
+
+        p {
+            font-size: text(main-text);
+            line-height: 1.7;
+        }
+}
+

@@ -1,0 +1,33 @@
+// main image wrap
+
+.main-image_container {
+    // padding-top: 100px;
+    margin-top: 6em;
+    background-image: url(./images/mainImage.jpg);
+    background-size: cover;
+    background-position: left bottom;
+    padding-top: 80px;
+    height: 40em;
+    @include flex(column);
+}
+
+.main-image_container form {
+    @include box;
+    @include flex(column);
+    align-items: flex-start;
+    max-width: 450px;
+    // margin-top: auto;
+    padding: 10px;
+    background-color: grey;
+    opacity: 0.5;
+
+    label {
+        color: color(primary-color);
+        margin: 1em 0;
+    }
+
+    input {
+        width: 25em;
+        height: 2.5em;
+    }
+}
