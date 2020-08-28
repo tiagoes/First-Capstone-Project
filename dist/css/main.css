@@ -239,4 +239,107 @@ nav .nav-right li a {
   font-size: 0.75em;
   line-height: 1.7;
 }
+
+.section3 {
+  margin: 10em 0;
+  border: 1px solid black;
+}
+
+.section3-card {
+  padding: 2em 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .section3-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.section3-card img {
+  width: 250px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .section3-card img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+.section3-card .section3-card_textContainer {
+  width: 315px;
+}
+
+@media (min-width: 768px) {
+  .section3-card .section3-card_textContainer {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section3-card .section3-card_textContainer {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+.section3-card .section3-card_textContainer h4 {
+  font-size: 1.2em;
+  color: red;
+  margin-bottom: 0.5em;
+  color: #fff;
+  font-weight: 500;
+}
+
+.section3-card .section3-card_textContainer h5 {
+  font-size: 0.75em;
+  line-height: 1.7;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+.section3-card .section3-card_textContainer button {
+  width: 100%;
+  color: #e27f64;
+  background-color: white;
+  padding: 1em;
+  border: 0;
+}
+
+.sectio3_article1 {
+  background-color: #e27f64;
+}
+
+.sectio3_article2 {
+  background-color: #97a5a6;
+}
+
+.sectio3_article3 {
+  background-color: #519bd7;
+}
 /*# sourceMappingURL=main.css.map */

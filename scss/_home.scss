@@ -40,3 +40,77 @@
         }
 }
 
+/// Section 3
+.section3 {
+    margin: 10em 0;
+    @include box;
+    
+}
+
+.section3-card  {
+    // width: 250px;
+    // @include box;
+    padding: 2em 100px;
+    @include flex(column);
+    @include tablet {
+        @include flex(row-reverse);
+        justify-content: space-between;
+        }
+    
+    img{
+        width: 250px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 1em;
+        @include desktop {
+           transform: scale(1.2);
+        }
+        
+    }
+    .section3-card_textContainer {
+        width: 315px;
+        @include tablet {
+            padding: 0;
+        }
+        @include desktop {
+            transform: scale(1.2);
+        }
+        
+        h4 {
+            font-size: text(main-title);
+            color: red;
+            margin-bottom: 0.5em;
+            color: color(primary-color);
+            font-weight: 500;
+        }
+        h5 {
+            
+            font-size: text(main-text);
+            line-height: 1.7;
+            margin-bottom: 1em;
+            color: color(primary-color);
+            
+        }
+
+        button {
+            width: 100%;
+            color:  rgb(226, 127, 100);;
+            background-color: white;
+            padding: 1em;
+            border: 0;
+        }
+    }
+}
+
+.sectio3_article1 {
+    background-color: rgb(226, 127, 100);
+}
+
+.sectio3_article2 {
+    background-color: rgb(151, 165, 166);
+}
+
+.sectio3_article3 {
+    background-color: rgb(81, 155, 215);
+}
+
