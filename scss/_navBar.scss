@@ -1,0 +1,56 @@
+nav {
+    position: fixed;;
+    top: 0;
+    width: 100%;
+    background-color: color(secondary-color);
+
+    @include tablet{
+        @include flex (row);
+       }
+    .nav-left {
+        @include tablet{
+            flex: 1;
+           }
+
+        h2 {
+            font-size: 2em;
+            padding: 0.25em 0 0.25em 0;
+            font-weight: 700;
+            color: color(primary-color);
+            text-align: center;
+            
+            @include tablet{
+                text-align: left;
+                padding-left: 1em;
+               }
+        }
+    }
+    
+    .nav-right{
+        @include flex (row);
+        justify-content: space-evenly;
+        padding: 1em 5em;
+        @include tablet{
+            flex: 1;
+            padding: 0;
+           }
+
+        li {
+            // @include box;
+            span{
+                display: none;
+
+                @include desktop{
+                 display: inline-block;
+                 padding-left: 0.5em;
+                }
+            }
+
+            a {
+                // display: inline;
+                padding: 1em;
+                color: color(primary-color);
+            }
+        }
+    }
+}

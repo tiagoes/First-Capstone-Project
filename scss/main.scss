@@ -1,16 +1,10 @@
 
 @import 'reset';
+@import 'config';
+@import 'navBar';
 @import 'home';
 
 
 
 
 
-.wrap {
-    padding-top: 100px;
-    background-image: url(./images/mainImage.jpg);
-    background-size: cover;
-    background-position: left bottom;
-    height: 40em;
-
-}

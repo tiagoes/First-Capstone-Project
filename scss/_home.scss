@@ -1,12 +1,24 @@
+// main image wrap
 
-
-
-
-.wrap {
-    padding-top: 100px;
+.main-image_container {
+    // padding-top: 100px;
     background-image: url(./images/mainImage.jpg);
     background-size: cover;
     background-position: left bottom;
-    height: 40em;
-    // max-width: 50%;
+    height: 30em;
+    @include flex(row);
+}
+
+.main-image_container form {
+    @include box;
+    @include flex(column);
+    align-items: flex-start;
+    max-width: 450px;
+    margin: auto;
+    padding: 25px;
+
+    label {
+        color: color(primary-color);
+    }
+
 }
