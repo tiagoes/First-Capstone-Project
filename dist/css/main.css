@@ -144,6 +144,20 @@ nav .nav-right li a {
   color: #fff;
 }
 
+.main-image_container .hidden {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.main-image_container:hover .hidden {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
 .main-image_container {
   margin-top: 6em;
   background-image: url(./images/mainImage.jpg);
@@ -241,7 +255,6 @@ nav .nav-right li a {
 }
 
 .section3 {
-  margin: 10em 0;
   border: 1px solid black;
 }
 
@@ -341,5 +354,13 @@ nav .nav-right li a {
 
 .sectio3_article3 {
   background-color: #519bd7;
+}
+
+.section4 h5 {
+  color: #dc3545;
+  font-size: 1.2em;
+  margin: 3em;
+  text-align: center;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=main.css.map */
