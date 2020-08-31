@@ -55,6 +55,10 @@ a {
   font-weight: inherit;
 }
 
+img {
+  width: 100%;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -64,7 +68,7 @@ nav {
   z-index: 999;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -79,7 +83,7 @@ nav {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   nav .nav-left {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -95,7 +99,7 @@ nav .nav-left h2 {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   nav .nav-left h2 {
     text-align: left;
     padding-left: 1em;
@@ -119,7 +123,7 @@ nav .nav-right {
   padding: 1em 5em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   nav .nav-right {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -272,7 +276,7 @@ nav .nav-right li a {
           align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .section3-card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -308,7 +312,7 @@ nav .nav-right li a {
   width: 315px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .section3-card .section3-card_textContainer {
     padding: 0;
   }
@@ -356,11 +360,69 @@ nav .nav-right li a {
   background-color: #519bd7;
 }
 
+.section4 {
+  margin-bottom: 10em;
+}
+
 .section4 h5 {
   color: #dc3545;
   font-size: 1.2em;
   margin: 3em;
   text-align: center;
+  border: 1px solid black;
+}
+
+@media (min-width: 900px) {
+  .section4 .section4_grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section4 .section4_grid {
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+
+.section4_card {
+  padding: 1em;
+  border: 1px solid black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% auto;
+      grid-template-columns: 70% auto;
+}
+
+@media (min-width: 900px) {
+  .section4_card {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+.section4_card .section4__card_container {
+  padding: 1em;
+}
+
+.section4_card .section4__card_container p {
+  margin-bottom: 1em;
+}
+
+.section4_card .section4__card_container h6 {
+  margin-bottom: 1em;
+}
+
+.section4_card .section4__card_container small {
+  display: inline-block;
+  margin-bottom: 1em;
+  font-size: 0.7em;
+}
+
+.section4_card .section4__card_container div {
   border: 1px solid black;
 }
 /*# sourceMappingURL=main.css.map */

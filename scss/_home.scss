@@ -115,9 +115,67 @@
 
 // section 4
 
+
 .section4 {
+    margin-bottom: 10em;
+
     h5 {
         @include sectionTitle;
         @include box;
+    }
+
+    .section4_grid {
+        @include tablet {
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
+        @include desktop {
+            // display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+    }
+}
+
+
+.section4_card {
+    padding: 1em;
+    @include box;
+    display: grid;
+    grid-template-columns: 70% auto;
+    @include tablet {
+        grid-template-columns:100%;
+    }
+
+    .section4__card_container {
+        padding: 1em;
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        h6 {
+            margin-bottom: 1em;
+        }
+
+        small {
+            display: inline-block;
+            margin-bottom: 1em;
+            font-size: 0.7em;
+        }
+
+        div {
+            @include box;
+
+           
+            a{
+
+                // @include box;
+                // margin-left: 1.5em;
+                // padding: 1em;
+                // background-color: red;;
+                   
+             }
+            
+        }
     }
 }
