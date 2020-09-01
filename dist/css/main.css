@@ -429,7 +429,6 @@ nav .nav-right li a {
 footer {
   border: 1px solid black;
   margin-top: 32px;
-  background-color: #363434;
   color: #fff;
 }
 
@@ -439,10 +438,15 @@ footer a {
 
 footer a:hover {
   color: #dc3545;
+  text-decoration: underline;
+}
+
+.footer-1 {
+  background-color: black;
 }
 
 .footer-1_top {
-  padding-top: 48px;
+  padding: 48px 16px 0 16px;
 }
 
 .footer-1_top ol {
@@ -456,7 +460,9 @@ footer a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid black;
+  padding: 16px 16px 16px 16px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
   border-color: #fff;
   width: 100%;
   -ms-flex-pack: distribute;
@@ -543,5 +549,41 @@ footer a:hover {
 button {
   border: 0;
   outline: 0;
+}
+
+.footer-2 {
+  border: 1px solid black;
+  background-color: #363434;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px;
+}
+
+.footer-2 ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 160px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */
