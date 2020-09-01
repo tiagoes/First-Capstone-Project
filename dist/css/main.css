@@ -425,4 +425,123 @@ nav .nav-right li a {
 .section4_card .section4__card_container div {
   border: 1px solid black;
 }
+
+footer {
+  border: 1px solid black;
+  margin-top: 32px;
+  background-color: #363434;
+  color: #fff;
+}
+
+footer a {
+  display: inline-block;
+}
+
+footer a:hover {
+  color: #dc3545;
+}
+
+.footer-1_top {
+  padding-top: 48px;
+}
+
+.footer-1_top ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  border-color: #fff;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-1_top ol .map {
+  border: 2px solid;
+  border-color: #fff;
+  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 60%;
+  padding: 32px;
+  display: inline;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, #dc3545));
+  background: linear-gradient(to right, white, #dc3545 50%);
+}
+
+.footer_top_subscrive,
+.footer_top_contact,
+.footer_top_about {
+  padding: 16px 0 16px 0;
+}
+
+.footer-1_bottom {
+  width: 100%;
+  text-align: center;
+  padding: 64px 16px 16px 16px;
+}
+
+@media (min-width: 900px) {
+  .footer-1_bottom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33.33333% 33.33333% 33.33333%;
+        grid-template-columns: 33.33333% 33.33333% 33.33333%;
+  }
+}
+
+.footer-1_bottom h5 {
+  margin-bottom: 16px;
+}
+
+.input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input input {
+  width: 80%;
+  height: 32px;
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: center;
+  border: 0;
+  outline: 0;
+}
+
+.input button {
+  width: 20%;
+  height: 32px;
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, #dc3545));
+  background: linear-gradient(to right, white, #dc3545 50%);
+}
+
+button {
+  border: 0;
+  outline: 0;
+}
 /*# sourceMappingURL=main.css.map */

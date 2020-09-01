@@ -1,0 +1,94 @@
+footer {
+    @include box;
+    margin-top: s(2);
+    background-color: rgb(54, 52, 52);
+    color: color(primary-color);
+
+    a {
+        display: inline-block;
+    }
+
+    a:hover {
+        color:color(secondary-color)
+    }
+}
+.footer-1_top {
+        padding-top: s(3);;
+    ol {
+        @include flex(row);
+        @include box;
+        border-color: color(primary-color);
+        width: 100%;
+        justify-content: space-around;
+
+        .map {
+            border: 2px solid;
+            border-color: color(primary-color);
+            border-bottom-left-radius: 60%;
+            border-bottom-right-radius: 60%;
+            padding: s(2);
+            display: inline;
+            background: linear-gradient(to right, white , color(secondary-color) 50%);;
+        }
+    }
+}
+
+// footer-1_bottom
+.footer_top_subscrive,
+.footer_top_contact,
+.footer_top_about{
+    padding: s(1) 0 s(1) 0;
+}
+
+.footer-1_bottom {
+    width: 100%;
+    text-align: center;
+    padding: s(4) s(1) s(1) s(1);
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: (100% / 3) (100% / 3) (100% / 3);
+    }
+
+    h5 {
+        margin-bottom: s(1);
+    }
+}
+
+.input {
+    @include flex(row);
+    justify-content: center;
+    input{
+        width: 80%;
+        height: 32px;
+        font-size: 1em;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        text-align: center;
+        border: 0;
+        outline:0;
+    }
+    
+    button {
+        width: 20%;
+        height: 32px;
+        font-size: 1em;
+        padding: 0;
+        margin: 0;
+        border-top-right-radius:10px ;
+        border-bottom-left-radius:10px ;
+        color: white;
+        background: linear-gradient(to right, white , color(secondary-color) 50%);
+    }
+
+}
+
+// very importante
+
+button {
+    border: 0;
+    outline:0;
+}
+
+
