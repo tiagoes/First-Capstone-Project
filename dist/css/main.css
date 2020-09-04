@@ -612,6 +612,12 @@ button {
           justify-content: space-between;
 }
 
+.registration {
+  background-color: #5fa8d3;
+  opacity: 0.7;
+  margin-top: 100px;
+}
+
 .registration-left h4 {
   font-size: 32px;
 }
@@ -634,6 +640,7 @@ button {
 }
 
 .registration-left {
+  background-color: white;
   width: 300px;
   height: 60vh;
   display: -webkit-box;

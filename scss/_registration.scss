@@ -1,5 +1,12 @@
 
+.registration {
+    background-color: #5fa8d3;
+    opacity: 0.7;
+    margin-top: 100px;
+}
 .registration-left {
+    // background-color: #5fa8d3;
+
     h4{
         font-size: s(2);
     }
@@ -19,6 +26,7 @@
 
 .registration-left {
     // @include box;
+    background-color: white;
     width: 300px;
     height: 60vh;
     display: flex;
