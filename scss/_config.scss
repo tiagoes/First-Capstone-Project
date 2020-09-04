@@ -5,9 +5,9 @@ $colors: (
 );
 
 $text-size: (
-    "main-text": 0.75em,
-    "main-title": 1.2em,
-    "secondary-title": 0.9em
+    "main-text": 1em,
+    "main-title": 1.4em,
+    "secondary-title": 1.2em
 );
 
 $tablet: 900px;
@@ -44,6 +44,12 @@ $desktop: 1024px;
     align-items: center;
 }
 
+@mixin position-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
 // media queries
 @mixin tablet {
     @media (min-width: #{$tablet}) {
@@ -56,3 +62,17 @@ $desktop: 1024px;
       @content;
     }
   }
+
+
+//   adding classes
+.position-fixed {
+    @include position-fixed;
+};
+
+.position-top-0 {
+    top: 0;
+};
+
+.position-bottom-0 {
+    bottom: 0;
+};

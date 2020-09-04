@@ -1,0 +1,93 @@
+
+.registration-left {
+    h4{
+        font-size: s(2);
+    }
+}
+
+
+.registration {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.registration-left {
+    // @include box;
+    width: 300px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+ .registration_form {
+    // @include box;
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-around;
+    // align-items: center;
+
+    input {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        padding-top: 20px;
+        outline: none;
+        // @include box;
+    }
+    .content-label {
+        // @include box;
+        position: absolute;
+        bottom:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        border-bottom: 1px solid black;
+    }
+   
+ };
+
+
+
+ .content-label::after {
+    content: '';
+    position: absolute;
+    bottom:-2px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    // border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    // overflow: hidden;
+ };
+
+ .content-text {
+     color: red;
+     position: absolute;
+     bottom: 5px;
+     left: 0px;
+     transition: all 1s ease;
+     
+ }
+ 
+ .registration_form input:focus + .content-label .content-text{
+     transform: translateY(-150%);
+     color: #5fa8d3;
+     
+ }
+
+ .registration_form input:focus + .content-label {
+     border-bottom: 3px solid #5fa8d3;
+ }
