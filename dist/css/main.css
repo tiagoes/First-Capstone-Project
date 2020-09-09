@@ -82,7 +82,7 @@ nav {
   z-index: 999;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -97,7 +97,7 @@ nav {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   nav .nav-left {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -113,7 +113,7 @@ nav .nav-left h2 {
   text-align: center;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   nav .nav-left h2 {
     text-align: left;
     padding-left: 1em;
@@ -137,7 +137,7 @@ nav .nav-right {
   padding: 1em 5em;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   nav .nav-right {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -163,7 +163,7 @@ nav .nav-right li a {
 }
 
 .main-image_container {
-  margin-top: 96px;
+  margin-top: 16px;
   background-image: url(./images/mainImage.jpg);
   background-size: cover;
   background-position: left bottom;
@@ -171,12 +171,17 @@ nav .nav-right li a {
   height: 100vh;
 }
 
+@media (min-width: 768px) {
+  .main-image_container {
+    margin-top: 0px;
+  }
+}
+
 .main-image_container .hidden {
   visibility: hidden;
   opacity: 0;
   -webkit-transition-duration: 2s;
           transition-duration: 2s;
-  border: 1px solid black;
   width: 100%;
   height: 100vh;
   -webkit-backdrop-filter: blur(40px);
@@ -191,9 +196,17 @@ nav .nav-right li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.main-image_container .hidden h2 {
+  color: #fff;
+  max-width: 450px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 64px;
+  line-height: 1.5;
+  margin-top: 128px;
 }
 
 .main-image_container:hover .hidden {
@@ -218,23 +231,29 @@ nav .nav-right li a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  max-width: 450px;
-  padding: 10px;
+  max-width: 300px;
+  padding: 16px;
+  opacity: 0.7;
   background-color: grey;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 10px 8px 10px;
+          box-shadow: 5px 10px 8px 10px;
+}
+
+.main-image_container form h4 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
 }
 
 .main-image_container form label {
   color: #fff;
-  margin: 1em 0;
+  margin: 2em 0;
 }
 
 .main-image_container form input {
-  width: 25em;
+  width: 15em;
   height: 2.5em;
-}
-
-.login:hover {
-  color: red;
 }
 
 .section2 {
@@ -301,7 +320,7 @@ nav .nav-right li a {
           align-items: center;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .section3-card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -337,7 +356,7 @@ nav .nav-right li a {
   width: 315px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .section3-card .section3-card_textContainer {
     padding: 0;
   }
@@ -392,12 +411,12 @@ nav .nav-right li a {
 .section4 h5 {
   color: #dc3545;
   font-size: 1.4em;
-  margin: 3em;
+  margin-bottom: 3em;
   text-align: center;
   border: 1px solid black;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .section4 .section4_grid {
     display: -ms-grid;
     display: grid;
@@ -422,7 +441,7 @@ nav .nav-right li a {
       grid-template-columns: 70% auto;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .section4_card {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
@@ -517,7 +536,7 @@ footer a:hover {
   padding: 64px 16px 16px 16px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .footer-1_bottom {
     display: -ms-grid;
     display: grid;
@@ -618,6 +637,12 @@ button {
   margin-top: 100px;
 }
 
+@media (min-width: 768px) {
+  .registration {
+    margin-top: 50px;
+  }
+}
+
 .registration-left h4 {
   font-size: 32px;
 }
@@ -677,17 +702,6 @@ button {
   height: 100%;
   pointer-events: none;
   border-bottom: 1px solid black;
-}
-
-.content-label::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
 }
 
 .content-text {

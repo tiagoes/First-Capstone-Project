@@ -10,7 +10,7 @@ $text-size: (
     "secondary-title": 1.2em
 );
 
-$tablet: 900px;
+$tablet: 768px;
 $desktop: 1024px;
 
 // here goes my funtion
@@ -34,7 +34,7 @@ $desktop: 1024px;
 @mixin sectionTitle {
     color: color(secondary-color);
     font-size: text(main-title);
-    margin: 3em;
+    margin-bottom: 3em;
     text-align: center;
 }
 
