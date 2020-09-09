@@ -3,7 +3,7 @@ footer {
     // margin-top: s(2);
     // background-color: rgb(54, 52, 52);
     
-    color: color(primary-color);
+    // color: color(primary-color);
 
     a {
         display: inline-block;
@@ -66,14 +66,10 @@ footer {
 }
 
 .input {
-    @include flex(row);
-    justify-content: center;
     input{
         width: 80%;
-        height: 32px;
+        height: s(2);
         font-size: 1em;
-        padding: 0;
-        margin: 0;
         border-radius: 0;
         text-align: center;
         border: 0;
@@ -82,39 +78,16 @@ footer {
     
     button {
         width: 20%;
-        height: s(2);
-        font-size: 1em;
-        padding: 0;
-        margin: 0;
-        border-top-right-radius:s(0.625) ;
-        border-bottom-left-radius:s(0.625) ;
-        color: white;
-        background: linear-gradient(to right, white , color(secondary-color) 50%);
     }
 
 }
 
-// very importante
-
-button {
-    border: 0;
-    outline:0;
-}
-
-// footer bottom
-
 .footer-2 {
-    @include box;
-    // width: 100%;
      background-color: rgb(54, 52, 52);
-     @include flex(row);
-     justify-content: space-between;
      padding: s(1);
+     
      ol {
-        @include flex(row);
-        // @include box;
         width: s(10);
-        justify-content: space-between;
 
      }
 };

@@ -6,6 +6,7 @@ $colors: (
 
 $text-size: (
     "main-text": 1em,
+    "small-text": 0.8em,
     "main-title": 1.4em,
     "secondary-title": 1.2em
 );
@@ -54,6 +55,19 @@ $desktop: 1024px;
     z-index: 999;
 }
 
+@mixin mainButton {
+    width: 100%;
+    height: s(2);
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    border-top-right-radius:s(0.625) ;
+    border-bottom-left-radius:s(0.625) ;
+    color: color(primary-color);
+    background: linear-gradient(to right, white , color(secondary-color) 50%);
+    cursor: pointer;
+}
+
 // media queries
 @mixin tablet {
     @media (min-width: #{$tablet}) {
@@ -80,3 +94,60 @@ $desktop: 1024px;
 .position-bottom-0 {
     bottom: 0;
 };
+
+
+// button
+.main-button {
+    @include mainButton;
+}
+
+.marginSection {
+    @include marginSection
+}
+
+.m-t-1 {
+    margin-top: s(1);
+}
+
+.m-t-2 {
+    margin-top: s(2);
+}
+
+
+.m-b-1 {
+    margin-bottom: s(1);
+}
+
+.m-b-2 {
+    margin-bottom: s(2);
+}
+
+.m-b-3 {
+    margin-bottom: s(3);
+}
+
+.text-align {
+    text-align: center;
+}
+
+// colors
+.main-color {
+    color: color(primary-color);
+}
+
+// flexBox
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}

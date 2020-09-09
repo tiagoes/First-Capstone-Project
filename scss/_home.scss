@@ -1,5 +1,5 @@
 .section2 {
-    @include marginSection;
+    
     h5 {
         @include sectionTitle;
 
@@ -7,7 +7,6 @@
 
     .section2-container {
         width: 80%;
-        margin-top: 3em;
         margin: 0 auto 0 auto;
         @include desktop {
             display: grid;
@@ -25,7 +24,6 @@
         }
 
         h4 {
-            // color: color(secondary-color);
             font-size: text(secondary-title);
             text-transform: uppercase;
             font-weight: 600;
@@ -40,7 +38,7 @@
 
 /// Section 3
 .section3 {
-    @include marginSection;
+    // @include marginSection;
     // @include box;
     
 }
@@ -59,7 +57,7 @@
         width: 250px;
         height: 200px;
         border-radius: 50%;
-        margin-bottom: 1em;
+        margin-bottom: s(1);
         @include desktop {
            transform: scale(1.2);
         }
@@ -77,7 +75,7 @@
         h4 {
             font-size: text(main-title);
             color: red;
-            margin-bottom: 0.5em;
+            margin-bottom: s(0.5);
             color: color(primary-color);
             font-weight: 500;
         }
@@ -85,9 +83,8 @@
             
             font-size: text(main-text);
             line-height: 1.7;
-            margin-bottom: 1em;
+            margin-bottom: s(1);
             color: color(primary-color);
-            
         }
 
         button {
@@ -116,11 +113,9 @@
 
 
 .section4 {
-    @include marginSection;
 
     h5 {
         @include sectionTitle;
-        // @include box;
     }
 
     .section4_grid {
@@ -138,19 +133,31 @@
 
 .section4_card {
     padding: 1em;
-    @include box;
+    // @include box;
     display: grid;
     grid-template-columns: 70% auto;
+    transition: 0.5s;
     @include tablet {
         grid-template-columns:100%;
+        grid-template-rows: 1fr 1fr;
+        &:hover {
+            transition: 1s;
+            transform: scale(1.2);
+        }
+    }
+
+    img {
+        width: 100%;
     }
 
     .section4__card_container {
+        display: block;
         padding: s(1);
-        background-color: red;
+        // background-color: white;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+        
 
         p {
            
@@ -163,19 +170,23 @@
         small {
             display: inline-block;
             
-            font-size: 0.7em;
+            font-size: text(small-text);
         }
 
         div {
-            @include box;
-
-           
             a{
 
-                // @include box;
-                // margin-left: 1.5em;
-                // padding: 1em;
-                // background-color: red;;
+                @include box;
+                margin-top: 10px;
+                display: inline-block;
+                padding: 5px;
+                border-radius: 50%;
+
+                &:hover {
+                    color: color(secondary-color);
+                    border-color: color(secondary-color);
+                    transition: 0.5s;
+                }
                    
              }
             
