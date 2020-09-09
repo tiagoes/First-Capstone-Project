@@ -34,8 +34,12 @@ $desktop: 1024px;
 @mixin sectionTitle {
     color: color(secondary-color);
     font-size: text(main-title);
-    margin-bottom: 3em;
+    margin-bottom: s(3);
     text-align: center;
+}
+
+@mixin marginSection {
+    margin-bottom: s(3);
 }
 
 @mixin flex($direction) {

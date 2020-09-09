@@ -1,5 +1,6 @@
 .main-image_container {
     margin-top: s(1);
+    @include marginSection;
     @include tablet {
         margin-top: s(0);
     };
@@ -28,7 +29,7 @@
         font-weight: 600;
         text-align: center;
         font-size: s(2);
-        margin-bottom: 64px;
+        margin-bottom: s(3);
         line-height: 1.5;
         margin-top: 128px;
         // display: block;
@@ -38,9 +39,9 @@
 
 
 .main-image_container:hover .hidden {
-    visibility: visible;
-    opacity: 1;
-    transition-duration: 2s;
+    // visibility: visible;
+    // opacity: 1;
+    // transition-duration: 2s;
     
 }
 

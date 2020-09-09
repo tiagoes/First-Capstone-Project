@@ -1,16 +1,14 @@
 .section2 {
-    margin-top: 3em;
+    @include marginSection;
     h5 {
-        color: color(secondary-color);
-        font-size: text(main-title);
-        text-align: center;
+        @include sectionTitle;
 
     }
 
     .section2-container {
         width: 80%;
         margin-top: 3em;
-        margin: 3em auto 10em auto;
+        margin: 0 auto 0 auto;
         @include desktop {
             display: grid;
             grid-template-columns: 50% auto;
@@ -19,7 +17,7 @@
 }
 
 .section2-card {
-    padding: 2em;
+    padding: s(3);
     text-align: center;
 
         span{
@@ -42,7 +40,8 @@
 
 /// Section 3
 .section3 {
-    @include box;
+    @include marginSection;
+    // @include box;
     
 }
 
@@ -117,11 +116,11 @@
 
 
 .section4 {
-    margin-bottom: 10em;
+    @include marginSection;
 
     h5 {
         @include sectionTitle;
-        @include box;
+        // @include box;
     }
 
     .section4_grid {
@@ -147,19 +146,23 @@
     }
 
     .section4__card_container {
-        padding: 1em;
+        padding: s(1);
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
 
         p {
-            margin-bottom: 1em;
+           
         }
 
         h6 {
-            margin-bottom: 1em;
+            
         }
 
         small {
             display: inline-block;
-            margin-bottom: 1em;
+            
             font-size: 0.7em;
         }
 
