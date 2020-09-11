@@ -89,6 +89,10 @@ button {
   font-size: 1.4em;
 }
 
+.fz-secondary-title {
+  font-size: 1.2em;
+}
+
 .text-align {
   text-align: center;
 }
@@ -300,7 +304,7 @@ nav .nav-right li a {
 .main-image_container .hidden h2 {
   max-width: 450px;
   text-align: center;
-  font-size: 48px;
+  font-size: 32px;
   margin-bottom: 48px;
   line-height: 1.5;
   margin-top: 48px;
@@ -870,5 +874,36 @@ footer a:hover {
     z-index: 999;
     width: 100%;
   }
+}
+
+.search {
+  width: 500px;
+  border: 1px solid black;
+  padding: 16px;
+  margin: auto;
+}
+
+.search h4 {
+  margin-bottom: 32px;
+}
+
+.search-form_left_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.search-form_left_input label {
+  margin-bottom: 8px;
+}
+
+.search-form_left_input input {
+  height: 50px;
+  padding-left: 16px;
 }
 /*# sourceMappingURL=main.css.map */

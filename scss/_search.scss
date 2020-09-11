@@ -1,0 +1,27 @@
+.search {
+    // background-color: red;
+    width: 500px;
+    @include box;
+    padding: s(1);
+    margin: auto;
+
+    h4 {
+        margin-bottom: s(2);
+    }
+}
+
+
+.search-form_left_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: s(1);
+    
+    label {
+        margin-bottom: s(0.5);
+    }
+
+    input {
+        height: 50px;
+        padding-left: s(1);
+    }
+}
