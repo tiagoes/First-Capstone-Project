@@ -2,6 +2,10 @@
 $colors: (
     "primary-color": #fff,
     "secondary-color": #dc3545,
+    "mainText-color" :black,
+    "facebook-color":  #4169e1,
+    "github-color": rgb(36, 41, 46)
+
 );
 
 $text-size: (
@@ -51,8 +55,6 @@ $desktop: 1024px;
 
 @mixin position-fixed {
     position: fixed;
-    width: 100%;
-    z-index: 999;
 }
 
 @mixin mainButton {
@@ -64,7 +66,7 @@ $desktop: 1024px;
     border-top-right-radius:s(0.625) ;
     border-bottom-left-radius:s(0.625) ;
     color: color(primary-color);
-    background: linear-gradient(to right, white , color(secondary-color) 50%);
+    background: linear-gradient(to right, color(secondary-color)90%, white 99%);
     cursor: pointer;
 }
 
@@ -83,24 +85,46 @@ $desktop: 1024px;
 
 
 //   adding classes
-.position-fixed {
-    @include position-fixed;
+
+// position
+.position-relative {
+    position: relative;
 };
 
-.position-top-0 {
+.postion-absolute {
+    position: absolute;
+}
+
+.position-tb-0 {
     top: 0;
+    bottom: 0;
 };
 
 .position-bottom-0 {
     bottom: 0;
 };
 
+// fonts
+
+.f-w-600 {
+    font-weight: 600;
+}
+
+.fz-main-title {
+    font-size: text(main-title);
+}
+
+.text-align {
+    text-align: center;
+}
 
 // button
 .main-button {
     @include mainButton;
 }
 
+
+// margin and padding
 .marginSection {
     @include marginSection
 }
@@ -111,6 +135,10 @@ $desktop: 1024px;
 
 .m-t-2 {
     margin-top: s(2);
+}
+
+.m-t-3 {
+    margin-top: s(3);
 }
 
 
@@ -126,13 +154,22 @@ $desktop: 1024px;
     margin-bottom: s(3);
 }
 
-.text-align {
-    text-align: center;
+.m-nav {
+    margin-top: s(7.375);
 }
 
-// colors
-.main-color {
+
+// text colors
+.t-primary-color {
     color: color(primary-color);
+}
+
+.t-secondary-color {
+color: color(secondary-color);
+}
+
+.t-mainText-color {
+    color: color(mainText-color);
 }
 
 // flexBox

@@ -1,7 +1,7 @@
 .main-image_container {
-    margin-top: s(7);
+    
     @include tablet {
-        margin-top: s(4);
+        margin-top: 69px;
     };
     background-image: url(./images/mainImage.jpg);
     background-size: cover;
@@ -23,18 +23,15 @@
     // justify-content: space-evenly;
 
     h2 {
-        color: color(primary-color);
         max-width: 450px;
-        font-weight: 600;
         text-align: center;
-        font-size: s(2);
+        font-size: s(3);
         margin-bottom: s(3);
         line-height: 1.5;
-        margin-top: 128px;
+        margin-top: s(3);
         
     }
 }
-
 
 .main-image_container:hover .hidden {
     visibility: visible;
@@ -53,7 +50,7 @@
 
     h4 {
         font-size: s(2);
-        font-weight: 600;
+        // font-weight: 600;
     }
 
     input {

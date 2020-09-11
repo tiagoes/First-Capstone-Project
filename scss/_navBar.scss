@@ -10,7 +10,6 @@ nav {
         @include flex (row);
        }
     .nav-left {
-        //  color: color(primary-color);
         @include tablet{
             flex: 1;
            }
@@ -19,7 +18,6 @@ nav {
             font-size: 1.5em;
             padding: 0.25em 0 0.25em 0;
             font-weight: 700;
-            // color: color(primary-color);
             text-align: center;
             @include tablet{
                 text-align: left;

@@ -64,18 +64,33 @@ button {
   outline: 0;
 }
 
-.position-fixed {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
+.position-relative {
+  position: relative;
 }
 
-.position-top-0 {
+.postion-absolute {
+  position: absolute;
+}
+
+.position-tb-0 {
   top: 0;
+  bottom: 0;
 }
 
 .position-bottom-0 {
   bottom: 0;
+}
+
+.f-w-600 {
+  font-weight: 600;
+}
+
+.fz-main-title {
+  font-size: 1.4em;
+}
+
+.text-align {
+  text-align: center;
 }
 
 .main-button {
@@ -87,8 +102,8 @@ button {
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   color: #fff;
-  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, #dc3545));
-  background: linear-gradient(to right, white, #dc3545 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(90%, #dc3545), color-stop(99%, white));
+  background: linear-gradient(to right, #dc3545 90%, white 99%);
   cursor: pointer;
 }
 
@@ -104,6 +119,10 @@ button {
   margin-top: 32px;
 }
 
+.m-t-3 {
+  margin-top: 48px;
+}
+
 .m-b-1 {
   margin-bottom: 16px;
 }
@@ -116,12 +135,20 @@ button {
   margin-bottom: 48px;
 }
 
-.text-align {
-  text-align: center;
+.m-nav {
+  margin-top: 118px;
 }
 
-.main-color {
+.t-primary-color {
   color: #fff;
+}
+
+.t-secondary-color {
+  color: #dc3545;
+}
+
+.t-mainText-color {
+  color: black;
 }
 
 .flex {
@@ -238,7 +265,6 @@ nav .nav-right li a {
 }
 
 .main-image_container {
-  margin-top: 112px;
   background-image: url(./images/mainImage.jpg);
   background-size: cover;
   background-position: left bottom;
@@ -248,7 +274,7 @@ nav .nav-right li a {
 
 @media (min-width: 768px) {
   .main-image_container {
-    margin-top: 64px;
+    margin-top: 69px;
   }
 }
 
@@ -272,14 +298,12 @@ nav .nav-right li a {
 }
 
 .main-image_container .hidden h2 {
-  color: #fff;
   max-width: 450px;
-  font-weight: 600;
   text-align: center;
-  font-size: 32px;
+  font-size: 48px;
   margin-bottom: 48px;
   line-height: 1.5;
-  margin-top: 128px;
+  margin-top: 48px;
 }
 
 .main-image_container:hover .hidden {
@@ -300,7 +324,6 @@ nav .nav-right li a {
 
 .main-image_container form h4 {
   font-size: 32px;
-  font-weight: 600;
 }
 
 .main-image_container form input {
@@ -482,8 +505,6 @@ nav .nav-right li a {
   display: grid;
   -ms-grid-columns: 70% auto;
       grid-template-columns: 70% auto;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 @media (min-width: 768px) {
@@ -492,12 +513,6 @@ nav .nav-right li a {
         grid-template-columns: 100%;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-  }
-  .section4_card:hover {
-    -webkit-transition: 1s;
-    transition: 1s;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
   }
 }
 
@@ -641,42 +656,73 @@ footer a:hover {
 }
 
 .registration {
-  background-color: #5fa8d3;
-  opacity: 0.7;
-  margin-top: 100px;
-}
-
-@media (min-width: 768px) {
-  .registration {
-    margin-top: 50px;
-  }
-}
-
-.registration-left h4 {
-  font-size: 32px;
-}
-
-.registration {
+  margin-top: 118px;
   width: 100%;
-  height: 100vh;
+  height: 83vh;
+  background-image: url(https://mapio.net/images-p/10927997.jpg);
+  background-size: cover;
+  background-position: left bottom;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  .registration {
+    margin-top: 64px;
+    height: 88.2vh;
+  }
+}
+
+.registration .registration_container {
+  width: 352px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+  border-radius: 50px;
+  -webkit-box-shadow: 5px 10px 8px 5px black;
+          box-shadow: 5px 10px 8px 5px black;
+}
+
+@media (min-width: 768px) {
+  .registration .registration_container {
+    min-width: 704px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.registration .registration_or {
+  border: 1px solid black;
+  padding: 5px;
+  position: absolute;
+  bottom: 245px;
+  left: 160px;
+  background-color: lightslategray;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .registration .registration_or {
+    bottom: 45%;
+    left: 47.5%;
+  }
+}
+
 .registration-left {
-  background-color: white;
-  width: 300px;
-  height: 60vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -686,24 +732,40 @@ footer a:hover {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 40px 40px 40px 40px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
-.registration_form {
+@media (min-width: 768px) {
+  .registration-left {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0;
+  }
+}
+
+.registration-left h4 {
+  font-size: 24px;
+}
+
+.registration-left .registration_form {
   font-size: 16px;
   width: 100%;
-  height: 50px;
+  height: 25px;
+  margin-top: 25px;
   position: relative;
 }
 
-.registration_form input {
+.registration-left .registration_form input {
   width: 100%;
   height: 100%;
   border: 0;
-  padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
   outline: none;
 }
 
-.registration_form .content-label {
+.registration-left .registration_form .content-label {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -713,8 +775,7 @@ footer a:hover {
   border-bottom: 1px solid black;
 }
 
-.content-text {
-  color: red;
+.registration-left .registration_form .content-text {
   position: absolute;
   bottom: 5px;
   left: 0px;
@@ -722,13 +783,92 @@ footer a:hover {
   transition: all 1s ease;
 }
 
-.registration_form input:focus + .content-label .content-text {
+.registration-left .registration_form input:focus + .content-label .content-text {
   -webkit-transform: translateY(-150%);
           transform: translateY(-150%);
   color: #5fa8d3;
+  visibility: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.registration_form input:focus + .content-label {
-  border-bottom: 3px solid #5fa8d3;
+.registration-left .registration_form input:focus + .content-label {
+  border-bottom: 2px solid #dc3545;
+}
+
+.registration-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 40px 40px;
+}
+
+@media (min-width: 768px) {
+  .registration-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: url(./images/mainImage.jpg);
+    background-size: cover;
+    background-position: left bottom;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    padding-bottom: 55px;
+  }
+}
+
+.registration-right h4 {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .registration-right h4 {
+    color: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+.registration-right button {
+  border-radius: 0;
+}
+
+.registration-right #facebook {
+  background: -webkit-gradient(linear, left top, right top, color-stop(90%, #4169e1), to(white));
+  background: linear-gradient(to right, #4169e1 90%, white);
+}
+
+.registration-right #google {
+  margin: 20px 0;
+}
+
+.registration-right #github {
+  background: -webkit-gradient(linear, left top, right top, color-stop(90%, #24292e), to(white));
+  background: linear-gradient(to right, #24292e 90%, white);
+}
+
+@media (min-width: 768px) {
+  .registration-footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

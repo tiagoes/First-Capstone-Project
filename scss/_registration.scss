@@ -1,97 +1,189 @@
 
 .registration {
-    background-color: #5fa8d3;
-    opacity: 0.7;
-    margin-top: 100px;
+    margin-top: s(7.375);
     @include tablet{
-        margin-top: 50px;
+        margin-top: s(4);
+        height: 88.2vh;
     }
-}
-.registration-left {
-    // background-color: #5fa8d3;
-
-    h4{
-        font-size: s(2);
-    }
-}
-
-.registration {
     width: 100%;
-    height: 100vh;
+    height: 83vh;
+    background-image: url(https://mapio.net/images-p/10927997.jpg);
+    background-size: cover;
+    background-position: left bottom;
+    
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    
+    
+    .registration_container {
+        width: s(22);
+        background-color: rgba(255,255,255,0.5);
+        backdrop-filter: blur(100px);
+        // @include box;
+        border-radius: 50px;
+        box-shadow: 5px 10px 8px 5px black;
+        // align-items: center;
+        // background-image: url(./images/mainImage.jpg);
+        @include tablet {
+            min-width:s(44);
+            display: flex;
+            justify-content: center;
+            
+        }
+    }
+
+    .registration_or {
+        @include box;
+        padding: 5px;
+        // background: yellow;
+        position: absolute;
+        bottom: 245px;
+        left: 160px;
+        background-color:lightslategray;
+        border-radius: 50%;
+        @include tablet {
+            bottom: 45%;
+            left: 47.5%;
+            
+        }
+    }
     
 }
 
 .registration-left {
-    // @include box;
-    background-color: white;
-    width: 300px;
-    height: 60vh;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 40px 40px 40px 40px;
+    
+    // backdrop-filter: blur(100px);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    @include tablet {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 0;
+    }
+    // border-top-right-radius: 50px;
+
+    h4{
+        font-size: s(1.5);
+    }
+
+    .registration_form {
+        font-size: 16px;
+        width: 100%;
+        height: 25px;
+        margin-top: 25px;
+        position: relative;
+    
+        input {
+            // @include box;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            background-color: rgba(255,255,255,0.8);
+            // padding-top: 20px;
+            outline: none;
+        }
+    
+        .content-label {
+            // @include box;
+            position: absolute;
+            bottom:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            border-bottom: 1px solid black;
+        }
+    
+        .content-text {
+            // color: red;
+            position: absolute;
+            bottom: 5px;
+            left: 0px;
+            transition: all 1s ease;
+            
+        } 
+        
+        & input:focus + .content-label .content-text{
+                 transform: translateY(-150%);
+                 color: #5fa8d3;
+                 visibility: hidden;
+                 transition: 1s;
+                 
+        }
+       
+    
+        & input:focus + .content-label {
+            border-bottom: 2px solid color(secondary-color);
+            // border: 3px solid color(secondary-color);
+        }
+       
+     };
 
 }
 
- .registration_form {
-    font-size: 16px;
+
+.registration-right {
+    flex: 1;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding:40px 40px;
+
+    @include tablet {
+        @include flex(column);
+        justify-content: center;
+        background-image: url(./images/mainImage.jpg);
+        background-size: cover;
+        background-position: left bottom;
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 0;
+        padding-bottom: 55px;
+        // 
+    }
+    h4 {
+        font-size: text(main-title);
+        margin-bottom: 20px;
+        // color: red;
+        
+        @include tablet {
+            color: color(primary-color);
+            margin-bottom: 50px;
+            text-align: center;
+        }
+    }
+
+    button {
+        border-radius: 0;
+     }
+
+    #facebook {
+        background: linear-gradient(to right, color(facebook-color) 90%, white);
+        // margin-top: 100px;
+    }
+
+    #google {
+        margin: 20px 0;
+    }
+
+    #github {
+        background: linear-gradient(to right, color(github-color) 90%, white);
+    } 
+}
+
+.registration-footer {
+    @include tablet {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
     width: 100%;
-    height: 50px;
-    position: relative;
-
-    input {
-        width: 100%;
-        height: 100%;
-        border: 0;
-        padding-top: 20px;
-        outline: none;
     }
-
-    .content-label {
-        // @include box;
-        position: absolute;
-        bottom:0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        border-bottom: 1px solid black;
-    }
-   
- };
-
-
-
-//  .content-label::after {
-//     content: '';
-//     position: absolute;
-//     bottom:-2px;
-//     left: 0;
-//     height: 100%;
-//     width: 100%;
-//     // border-bottom: 3px solid #5fa8d3;
-//     transform: translateX(-100%);
-//     // overflow: hidden;
-//  };
-
- .content-text {
-     color: red;
-     position: absolute;
-     bottom: 5px;
-     left: 0px;
-     transition: all 1s ease;
-     
- }
- 
- .registration_form input:focus + .content-label .content-text{
-     transform: translateY(-150%);
-     color: #5fa8d3;
-     
- }
-
- .registration_form input:focus + .content-label {
-     border-bottom: 3px solid #5fa8d3;
- }
+    
+}

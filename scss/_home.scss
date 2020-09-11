@@ -124,7 +124,6 @@
             grid-template-columns: 50% auto;
         }
         @include desktop {
-            // display: grid;
             grid-template-columns: 25% 25% 25% 25%;
         }
     }
@@ -136,14 +135,10 @@
     // @include box;
     display: grid;
     grid-template-columns: 70% auto;
-    transition: 0.5s;
     @include tablet {
         grid-template-columns:100%;
         grid-template-rows: 1fr 1fr;
-        &:hover {
-            transition: 1s;
-            transform: scale(1.2);
-        }
+        // row-gap: 10px;
     }
 
     img {
@@ -157,7 +152,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @include tablet {
         
+            
+        }
 
         p {
            
