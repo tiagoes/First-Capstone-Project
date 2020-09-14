@@ -1,193 +1,112 @@
-.section2 {
+.section2-container {
+    width: 80%;
     
-    h5 {
-        @include sectionTitle;
-
-    }
-
-    .section2-container {
-        width: 80%;
-        margin: 0 auto 0 auto;
-        @include desktop {
-            display: grid;
-            grid-template-columns: 50% auto;
-        }
+    .section2-text p{
+        line-height: 1.7;
     }
 }
 
-.section2-card {
-    padding: s(3);
-    text-align: center;
 
-        span{
-            color: color(secondary-color);
-        }
-
-        h4 {
-            font-size: text(secondary-title);
-            text-transform: uppercase;
-            font-weight: 600;
-            padding: 1em 0;
-        }
-
-        p {
-            font-size: text(main-text);
-            line-height: 1.7;
-        }
-}
-
-/// Section 3
-.section3 {
-    // @include marginSection;
-    // @include box;
-    
-}
-
-.section3-card  {
-    // width: 250px;
-    // @include box;
-    padding: 2em 100px;
-    @include flex(column);
+.section3-card_container {
+    max-width: s(24);
     @include tablet {
-        @include flex(row-reverse);
-        justify-content: space-between;
-        }
-    
-    img{
-        width: 250px;
-        height: 200px;
-        border-radius: 50%;
-        margin-bottom: s(1);
-        @include desktop {
-           transform: scale(1.2);
-        }
-        
+        max-width: 100%;
     }
-    .section3-card_textContainer {
-        width: 315px;
-        @include tablet {
-            padding: 0;
-        }
-        @include desktop {
-            transform: scale(1.2);
-        }
-        
-        h4 {
-            font-size: text(main-title);
-            color: red;
-            margin-bottom: s(0.5);
-            color: color(primary-color);
-            font-weight: 500;
-        }
-        h5 {
-            
-            font-size: text(main-text);
-            line-height: 1.7;
-            margin-bottom: s(1);
-            color: color(primary-color);
-        }
 
-        button {
-            width: 100%;
-            color:  rgb(226, 127, 100);;
-            background-color: white;
-            padding: 1em;
-            border: 0;
-        }
-    }
+    .section3-card {
+        @include tablet {
+           flex-direction: row-reverse;
+       }
+   
+       img{
+           border-radius: 50%;
+           height: 200px;
+           max-width: s(20);
+           @include tablet {
+               width: 50%;
+           }
+       }
+   
+       .section3-card_textContainer {
+           @include tablet {
+               max-width: 500px; 
+           }
+       }
+   }
 }
 
-.sectio3_article1 {
+.section3_article1-bk {
     background-color: rgb(226, 127, 100);
 }
 
-.sectio3_article2 {
+.section3_article1-c {
+    color: rgb(226, 127, 100);
+}
+
+.section3_article2-bk {
     background-color: rgb(151, 165, 166);
 }
 
-.sectio3_article3 {
+.section3_article2-c {
+    color: rgb(151, 165, 166);
+}
+
+.section3_article3-bk {
     background-color: rgb(81, 155, 215);
 }
 
+.sectio3_article3-c {
+    color: rgb(81, 155, 215);
+}
 // section 4
 
 
-.section4 {
 
-    h5 {
-        @include sectionTitle;
-    }
-
-    .section4_grid {
+.section4-grid {
         @include tablet {
-            display: grid;
-            grid-template-columns: 50% auto;
+           padding: s(1);
         }
         @include desktop {
-            grid-template-columns: 25% 25% 25% 25%;
-        }
-    }
-}
-
-
-.section4_card {
-    padding: 1em;
-    // @include box;
-    display: grid;
-    grid-template-columns: 70% auto;
-    @include tablet {
-        grid-template-columns:100%;
-        grid-template-rows: 1fr 1fr;
-        // row-gap: 10px;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    .section4__card_container {
-        display: block;
-        padding: s(1);
-        // background-color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        @include tablet {
         
-            
-        }
-
-        p {
-           
-        }
-
-        h6 {
-            
-        }
-
-        small {
-            display: inline-block;
-            
-            font-size: text(small-text);
-        }
-
-        div {
-            a{
-
-                @include box;
-                margin-top: 10px;
-                display: inline-block;
-                padding: 5px;
-                border-radius: 50%;
-
-                &:hover {
-                    color: color(secondary-color);
-                    border-color: color(secondary-color);
-                    transition: 0.5s;
-                }
-                   
-             }
-            
         }
     }
+
+.section4-card {
+    grid-template-columns: 60% auto;
+    gap: s(1);
+    @include tablet {
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr auto;
+        padding: 0 0 s(0.5) 0;
+        @include box;
+        border-color: color(smallText-color);
+    }
 }
+            
+//         }
+
+//         small {
+
+//             font-size: text(small-text);
+//         }
+
+//         div {
+//             a{
+
+//                 @include box;
+//                 margin-top: 10px;
+//                 display: inline-block;
+//                 padding: 5px;
+//                 border-radius: 50%;
+
+//                 &:hover {
+//                     color: color(secondary-color);
+//                     border-color: color(secondary-color);
+//                     transition: 0.5s;
+//                 }
+                   
+//              }
+            
+//         }
+//     }
+// }

@@ -53,13 +53,13 @@
         // @include box;
         padding: s(1);
         // margin: 0 auto;
-        margin: 200px auto 0 auto;
+        margin: 300px auto 0 auto;
         @include tablet {
-        margin-top: 300px;
+        // margin-top: 300px;
         max-width: 800px;;
         }
         @include desktop {
-            margin-top: 300px;
+            margin-top: 400px;
             max-width: 1000px;
         }
     

@@ -60,9 +60,9 @@ $desktop: 1024px;
 
 @mixin mainButton {
     width: 100%;
-    height: s(2);
+    // height: s(2);
     font-size: 1em;
-    padding: 0;
+    padding: s(1);
     margin: 0;
     border-top-right-radius:s(0.625) ;
     border-bottom-left-radius:s(0.625) ;
@@ -130,16 +130,29 @@ $desktop: 1024px;
     font-weight: 600;
 }
 
+
+.fz-m-te {
+    font-size: text(main-text);
+}
+
 .fz-main-title {
     font-size: text(main-title);
 }
 
-.fz-secondary-title {
+.fz-st {
     font-size: text(secondary-title);
 }
 
-.text-align {
+.t-c {
     text-align: center;
+}
+
+.lh-17 {
+    line-height: 1.7;
+}
+
+.lh-14 {
+    line-height: 1.4;
 }
 
 // button
@@ -155,7 +168,9 @@ $desktop: 1024px;
     @include sectionTitle;
 }
 
-
+.uppercase {
+    text-transform: uppercase;
+}
 
 .smallText {
     font-size: text(small-text);
@@ -178,7 +193,9 @@ $desktop: 1024px;
     margin-top: s(3);
 }
 
-
+.m-b-05 {
+    margin-bottom: s(0.5);
+}
 .m-b-1 {
     margin-bottom: s(1);
 }
@@ -191,52 +208,101 @@ $desktop: 1024px;
     margin-bottom: s(3);
 }
 
+// MARGIN Xxx
+.m-x-1 {
+    margin: s(1) 0;
+}
+
+.m-x-2 {
+    margin: s(2) 0;
+}
+
 .m-nav {
     margin-top: s(7.375);
 }
 
+.m-center {
+    margin: 0 auto;
+}
+
 // PADDING
+
+
+.p-05 {
+    padding: s(0.5);
+}
+
 .p-1 {
     padding: s(1);
 }
 
+.p-2 {
+    padding: s(2);
+}
+
+.p-3 {
+    padding: s(3);
+}
+
+.p-l-05 {
+    padding-left: s(0.5);
+}
+
+// PADDING Xxx
+
+.p-x-1 {
+    padding:0 s(1);
+}
+
 .p-x-2 {
-    padding-left: s(2);
-    padding-right: s(2);
+    padding:0 s(2);
 }
 
 .p-x-3 {
-    padding-left: s(3);
-    padding-right: s(3);
+    padding:0 s(3);
 }
 
-.p-x-1 {
-    padding-left: s(1);
-    padding-right: s(1);
+// PADDING Yy
+
+.p-y-1 {
+    padding:s(1) 0;
 }
+
 
 // text colors
-.t-primary-color {
+.t-c-p {
     color: color(primary-color);
 }
 
-.t-secondary-color {
-color: color(secondary-color);
+.t-c-s {
+    color: color(secondary-color);
 }
 
-.t-mainText-color {
+.t-c-m {
     color: color(mainText-color);
 }
+// 
+// TEXT SIZE
 
 // bacground colors
 
+.bk-c-primary {
+    background: color(primary-color);
+}
+
 .bk-c-secondary {
-    background-color: color(secondary-color);
+    background: color(secondary-color);
 }
 
 // flexBox
 .flex {
     display: flex;
+}
+
+.flex-t {
+   @include tablet {
+       display: flex;
+   }
 }
 
 .row {
@@ -247,7 +313,16 @@ color: color(secondary-color);
     flex-direction: column;
 }
 
+.column-t {
+    flex-direction: column;
+}
+
+
 .space-between {
+    justify-content: space-between;
+}
+
+.space-between-t {
     justify-content: space-between;
 }
 
@@ -267,12 +342,26 @@ color: color(secondary-color);
     }
 }
 
+.grid-d {
+    @include desktop {
+        display: grid;
+    }
+}
+
 .grid-c-2 {
     grid-template-columns: 1fr 1fr;
+    gap: s(1);
 }
 
 .grid-c-2-t {
     @include tablet {
+        grid-template-columns: 1fr 1fr;
+        gap: s(1);
+    }
+}
+
+.grid-c-2-d {
+    @include desktop {
         grid-template-columns: 1fr 1fr;
         gap: s(1);
     }
