@@ -1,20 +1,85 @@
-.search {
-    max-width: 600px;
-    @include box;
-    padding: s(1);
-    margin: auto;
-    @include tablet {
-    max-width: 800px;;
+
+.search-image {
+    // background-image: url(./images/malta2.jpg);
+    // background-size: cover;
+    // background-position: left bottom;
+    // width: 80%;
+    height: 550px;
+    transition: 5s;
+
+    animation-name: searchAnimate;
+    animation-direction: alternate;
+    animation-duration: 60s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes seachAnimate {
+    0% {
+        background-image: url(./images/malta2.jpg);
     }
-
-
-    h4 {
-        // font-size: ;
-        margin-bottom: s(2);
-        width: 100%;
+    20% {
+        background-image: url(./images/malta2.jpg);
+    }
+    40% {
+        background-image: url(./images/malta2.jpg);
+    }
+    60% {
+        background-image: url(./images/malta1.jpg);
+    }
+    80% {
+        background-image: url(./images/malta2.jpg);
+    }
+    100% {
+        background-image: url(./images/malta1.jpg);
     }
 }
 
+.search-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .search {
+        @include box;
+        background-color: white;
+        max-width: 600px;
+        // margin-top: 300px;
+        // @include box;
+        padding: s(1);
+        // margin: 0 auto;
+        margin: 200px auto 0 auto;
+        @include tablet {
+        margin-top: 300px;
+        max-width: 800px;;
+        }
+        @include desktop {
+            margin-top: 300px;
+            max-width: 1000px;
+        }
+    
+    
+        h4 {
+            // font-size: ;
+            margin-bottom: s(2);
+            width: 100%;
+        }
+    
+        button {
+            width: 40%;
+            @include desktop {
+                width: 100%;
+                padding: 20px 30px 30px 30px;
+            }
+        }
+    }
+    
+}
 
 .search-form {
     // @include box;
@@ -30,6 +95,8 @@
         grid-template-columns: 1fr 1fr 1fr;
         // grid-column-gap: 2%;
     }
+
+    
 }
 
 .search-form_input {
@@ -53,21 +120,104 @@
     }
 
     input {
- border: 1px solid gray;
+     border: 1px solid gray;
     }
 
     option {
         // height: 50px;
         color: gray;
     }
+
+    .search-form_input_special {
+        @include desktop{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+    }
+
 }
 
-.search-form_input_special {
-    @include desktop{
+.form_input_button {
+    // @include box;
+    @include desktop {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    input {
-        margin-bottom: 10px;
+
+    .search-form_radios {
+        // @include box;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: s(2);
+        // justify-content: center;
+        input {
+           width: 20px;
+        }
+        label {
+            margin-left: 5px;
+            margin-bottom: 0;
+        }
     }
+}
+
+// second section
+
+.search-finded {
+    margin-top: s(40);
+
+    @include tablet {
+        margin-top: s(23);
+    }
+    @include desktop {
+        margin-top: s(11);
+    }
+}
+
+.search-finded-container {
+    gap: s(2);
+}
+
+.search-finded-result {
+    // background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.search-finded-result-layer {
+    top: 0;
+    width: 50%;
+    height: 100%;
+    opacity: 0.6;
+    transition: 2s;
+}
+
+.search-finded-result-layer-right {
+    left: 50%;
+    top: 0;
+    // background-color: red;
+}
+
+.search-finded-result-layer-center {
+    width: 100%;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.search-finded-result-layer-center:hover {
+    opacity: 0;
+    // transition: 0.5s;
+}
+
+.search-finded-result-layer-center:hover ~ .search-finded-result-layer-right {
+    opacity: 0;
+    transition:2s;
+    transform: translateX(200%);
+}
+.search-finded-result-layer-center:hover ~ .search-finded-result-layer-left {
+    opacity: 0;
+    transition: 2s;
+    transform: translateX(-100%);
 }

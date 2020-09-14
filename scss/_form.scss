@@ -3,7 +3,7 @@
     @include tablet {
         margin-top: 69px;
     };
-    background-image: url(./images/mainImage.jpg);
+    background-image: url(./images/malta1.jpg);
     background-size: cover;
     background-position: left bottom;
     width: 100%;
@@ -11,8 +11,8 @@
 }
 
 .main-image_container .hidden {
-    // visibility: hidden;
-    // opacity: 0;
+    visibility: hidden;
+    opacity: 0;
     transition-duration: 2s;
     // @include box;
     // margin-bottom: s(2);

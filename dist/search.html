@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/main.css">
         <script
         src="https://kit.fontawesome.com/52c781ef58.js"
@@ -11,7 +12,7 @@
         <title>Document</title>
     </head>
     <body>
-            <!-- <nav class="t-primary-color">
+            <nav class="t-primary-color">
                 <div class="nav-left">
                     <h2><i class="fas fa-map-marker-alt"></i>Welcome to Malta!</h2>
                 </div>
@@ -28,135 +29,301 @@
                         <li><a href="#"><i class="fas fa-th-large"></i><span> More </span></a></li>
                 
                 </ol>
-            </nav> -->
+            </nav>
 
-       
+            <section class="  position-relative m-nav">
+                <div class="main-image_container search-image ">
+                </div>
 
-
-            <main class="main-search">
-                <section class="search">
-                    <form action="">
-                        <h4 class="fz-secondary-title f-w-600 t-secondary-color ">Find your property</h4>
-                            <div class="search-form">
-                                
-                                <div class="search-form_input">
-                                    <label for="Keyword">Keyword</label>
-                                    <input type="text" id="keyword" placeholder="Any">
-                                </div>
-                                
-                                <div class="search-form_input">
-                                    <label for="Keyword">Location</label>
-                                    <select name="select">
-                                        <option value="valor1">Valor 1</option> 
-                                        <option value="valor2" selected>Valor 2</option>
-                                        <option value="valor3">Valor 3</option>
-                                    </select>
-                                </div>
-                                <div class="search-form_input">
-                                    <label for="Keyword">Property Status</label>
-                                    <select name="select">
-                                        <option value="valor1">Valor 1</option> 
-                                        <option value="valor2" selected>Valor 2</option>
-                                        <option value="valor3">Valor 3</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="search-form_input">
-                                    <label for="Keyword">Property type</label>
-                                    <select name="select">
-                                        <option value="valor1">Valor 1</option> 
-                                        <option value="valor2" selected>Valor 2</option>
-                                        <option value="valor3">Valor 3</option>
-                                    </select>
-                                </div>
-
-                                <div class="search-form_input">
-                                    <label for="Price (USD)">Price (USD)</label>
-                                    <div class="search-form_input_special">
-                                        <input type="text" id="Price (USD)" placeholder="100">
-                                        <input type="text" id="Price (USD)" placeholder="600">
+                <article class="search-container">
+                    <div class="marginSection search">
+                        <form action="">
+                            <h4 class="fz-secondary-title f-w-600 t-secondary-color ">Find your property</h4>
+                                <div class="search-form">
+                                    
+                                    <div class="search-form_input">
+                                        <label for="Keyword">Keyword</label>
+                                        <input type="text" id="keyword" placeholder="Any">
                                     </div>
-                                </div>
-
-                                <div class="search-form_input ">
-                                    <label for="Price (USD)">Price (USD)</label>
-                                    <div class="search-form_input_special">
-                                        <input type="text" id="Price (USD)" placeholder="100">
-                                        <input type="text" id="Price (USD)" placeholder="600">
+                                    
+                                    <div class="search-form_input">
+                                        <label for="Keyword">Location</label>
+                                        <select name="select">
+                                            <option value="valor1">Valor 1</option> 
+                                            <option value="valor2" selected>Valor 2</option>
+                                            <option value="valor3">Valor 3</option>
+                                        </select>
                                     </div>
-                                </div>
-
-                                
-                                <!-- <div class="search-form_input">
-                                    <div  class="search-form_input_special"> 
+                                    <div class="search-form_input">
+                                        <label for="Keyword">Property Status</label>
+                                        <select name="select">
+                                            <option value="valor1">Valor 1</option> 
+                                            <option value="valor2" selected>Valor 2</option>
+                                            <option value="valor3">Valor 3</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="search-form_input">
+                                        <label for="Keyword">Property type</label>
+                                        <select name="select">
+                                            <option value="valor1">Valor 1</option> 
+                                            <option value="valor2" selected>Valor 2</option>
+                                            <option value="valor3">Valor 3</option>
+                                        </select>
+                                    </div>
+    
+                                    <div class="search-form_input">
+                                        <label for="Price (USD)">Price (USD)</label>
+                                        <div class="search-form_input_special">
+                                            <input type="text" id="Price (USD)" placeholder="100">
+                                            <input type="text" id="Price (USD)" placeholder="600">
+                                        </div>
+                                    </div>
+    
+                                    <div class="search-form_input ">
                                         <label for="Area (Sq Ft)">Area (Sq Ft)</label>
-                                        <input type="text" id="Area (Sq Ft)" placeholder="1500">
-                                        <input type="text" id="Area (Sq Ft)" placeholder="2250">
+                                        <div class="search-form_input_special">
+                                            <input type="text" id="Area (Sq Ft)" placeholder="1500">
+                                            <input type="text" id="Area (Sq Ft)" placeholder="2250">
+                                        </div>
+                                       
+                                        
                                     </div>
-                                </div> -->
-                                
-                                
-                            
+                                </div>
+                        </form>
+                        <div class="form_input_button">
+                            <div class="search-form_input search-form_radios">
+                                <input type="checkbox" id="keyword" placeholder="Any">
+                                <label for="Keyword">Enable the map-based search with 100% verified listings and real property pictures. lor </label>
+                               
                             </div>
-                    </form>
-                </section>
-
-            </main>
-
-     <!-- <footer class="t-primary-color">
-        <div class="footer-1">
-                    <div class="footer-1_top">
-                        <ol>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#"><i class="fas fa-map-marker-alt fa-2x map"></i></a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Home</a></li>
-                        </ol>
+                            <button class="main-button">Search Now</button>
+                        </div>   
                     </div>
-                    <div class="footer-1_bottom">
-                        <div class="footer_top_subscrive">
-                            <h5><a href="#">
-                                Subscrive
-                            </a></h5>
-                            <div class=" flex input">
-                                <input type="text" placeholder="admin@rentingmalta.com">
-                                <button class="main-button">Send</button>
-                            </div>
-                        </div>
-                    
-                        <div class="footer_top_contact">
-                            <h5><a href="#">
-                                Contact</a>
-                            </h5>
-                            <a href="#">Have a question? </a><br>
+                </article>
 
-                        <a href="#">
-                            <span>admin@rentingmalta.com</span>
+            </section>
+
+            <!-- section2 -->
+            <section class="search-finded">
+                <h2 class="sectionTitle">Results founded 8</h2>
+                <div class="p-x-3 grid grid-c-2-t grid-c-4-d search-finded-container">
+                    <!-- first -->
+                    <article class=" box b-c-g  search-finded-result">
+                        <a class="" href="#">
+                            <img src="./css/images/house1.jpeg" alt="">
+                            <div class="p-1 ">
+                                <small class="smallText ">2000 Euros</small>
+                                <p class=" m-t-1 fz-secondary-title">Beautifull house</p>
+                                
+                            </div>
+                            <div class="d-p-a  z-i-999 flex flex-center search-finded-result-layer
+                            search-finded-result-layer-center">
+                                <h3 class="fz-main-title t-primary-color f-w-600">Available</h3>
+                            </div>
+                            <div class="d-p-a d-p-a-0 search-finded-result-layer search-finded-result-layer-left bk-c-secondary">
+                            </div>
+                            <div class="d-p-a search-finded-result-layer search-finded-result-layer-right bk-c-secondary">
+                            </div>
                         </a>
-                        </div>
-                        <div class="footer_top_about">
-                            <h5><a href="#"></a>
-                            About</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                
-                        </div>
-                    </div>
-                </div>
+                    </article>
+                    <!-- second -->
+                    <article class=" box b-c-g  search-finded-result">
+                        <a class="" href="#">
+                            <img src="./css/images/house1.jpeg" alt="">
+                            <div class="p-1 ">
+                                <small class="smallText ">2000 Euros</small>
+                                <p class=" m-t-1 fz-secondary-title">Beautifull house</p>
+                                
+                            </div>
+                            <div class="d-p-a  z-i-999 flex flex-center search-finded-result-layer
+                            search-finded-result-layer-center">
+                                <h3 class="fz-main-title t-primary-color f-w-600">Rented</h3>
+                            </div>
+                            <div class="d-p-a d-p-a-0 search-finded-result-layer search-finded-result-layer-left bk-c-secondary">
+                            </div>
+                            <div class="d-p-a search-finded-result-layer search-finded-result-layer-right bk-c-secondary">
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <!-- third -->
+                    <article class=" box b-c-g  search-finded-result">
+                        <a class="" href="#">
+                            <img src="./css/images/house1.jpeg" alt="">
+                            <div class="p-1 ">
+                                <small class="smallText ">2000 Euros</small>
+                                <p class=" m-t-1 fz-secondary-title">Beautifull house</p>
+                                
+                            </div>
+                            <div class="d-p-a  z-i-999 flex flex-center search-finded-result-layer
+                            search-finded-result-layer-center">
+                                <h3 class="fz-main-title t-primary-color f-w-600">Rented</h3>
+                            </div>
+                            <div class="d-p-a d-p-a-0 search-finded-result-layer search-finded-result-layer-left bk-c-secondary">
+                            </div>
+                            <div class="d-p-a search-finded-result-layer search-finded-result-layer-right bk-c-secondary">
+                            </div>
+                        </a>
+                    </article>
 
-        <div class="footer-2 flex space-between">
-                    <ol class="flex space-between">
-                    <li> <a href="#"><i class="fab fa-linkedin fa-lg"></i></a></li>
-                    <li> <a href="#"><i class="fab fa-twitter-square fa-lg"></i></a></li>
-                    <li> <a href="#"><i class="fas fa-camera-retro fa-lg"></i></a></li>
-                    <li> <a href="#"><i class="fab fa-facebook-square fa-lg"></i></a></li>
-                    <li> <a href="#"><i class="fab fa-instagram-square fa-lg"></i></a></li>
-                    </ol>   
-                    <div>
-                        <a href="#">Malta's Renting. All rights reserved</a>
-                    </div>
+                    <!-- fourth -->
+                    <article class=" box b-c-g  search-finded-result">
+                        <a class="" href="#">
+                            <img src="./css/images/house1.jpeg" alt="">
+                            <div class="p-1 ">
+                                <small class="smallText ">2000 Euros</small>
+                                <p class=" m-t-1 fz-secondary-title">Beautifull house</p>
+                                
+                            </div>
+                            <div class="d-p-a  z-i-999 flex flex-center search-finded-result-layer
+                            search-finded-result-layer-center">
+                                <h3 class="fz-main-title t-primary-color f-w-600">Available</h3>
+                            </div>
+                            <div class="d-p-a d-p-a-0 search-finded-result-layer search-finded-result-layer-left bk-c-secondary">
+                            </div>
+                            <div class="d-p-a search-finded-result-layer search-finded-result-layer-right bk-c-secondary">
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- fith -->
+                    <article class=" box b-c-g  search-finded-result">
+                        <a class="" href="#">
+                            <img src="./css/images/house1.jpeg" alt="">
+                            <div class="p-1 ">
+                                <small class="smallText ">2000 Euros</small>
+                                <p class=" m-t-1 fz-secondary-title">Beautifull house</p>
+                                
+                            </div>
+                            <div class="d-p-a  z-i-999 flex flex-center search-finded-result-layer
+                            search-finded-result-layer-center">
+                                <h3 class="fz-main-title t-primary-color f-w-600">Available</h3>
+                            </div>
+                            <div class="d-p-a d-p-a-0 search-finded-result-layer search-finded-result-layer-left bk-c-secondary">
+                            </div>
+                            <div class="d-p-a search-finded-result-layer search-finded-result-layer-right bk-c-secondary">
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- sixth -->
+                    <article class=" box b-c-g  search-finded-result">
+                        <a class="" href="#">
+                            <img src="./css/images/house1.jpeg" alt="">
+                            <div class="p-1 ">
+                                <small class="smallText ">2000 Euros</small>
+                                <p class=" m-t-1 fz-secondary-title">Beautifull house</p>
+                                
+                            </div>
+                            <div class="d-p-a  z-i-999 flex flex-center search-finded-result-layer
+                            search-finded-result-layer-center">
+                                <h3 class="fz-main-title t-primary-color f-w-600">Available</h3>
+                            </div>
+                            <div class="d-p-a d-p-a-0 search-finded-result-layer search-finded-result-layer-left bk-c-secondary">
+                            </div>
+                            <div class="d-p-a search-finded-result-layer search-finded-result-layer-right bk-c-secondary">
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- seventh -->
+                    <article class=" box b-c-g  search-finded-result">
+                        <a class="" href="#">
+                            <img src="./css/images/house1.jpeg" alt="">
+                            <div class="p-1 ">
+                                <small class="smallText ">2000 Euros</small>
+                                <p class=" m-t-1 fz-secondary-title">Beautifull house</p>
+                                
+                            </div>
+                            <div class="d-p-a  z-i-999 flex flex-center search-finded-result-layer
+                            search-finded-result-layer-center">
+                                <h3 class="fz-main-title t-primary-color f-w-600">Available</h3>
+                            </div>
+                            <div class="d-p-a d-p-a-0 search-finded-result-layer search-finded-result-layer-left bk-c-secondary">
+                            </div>
+                            <div class="d-p-a search-finded-result-layer search-finded-result-layer-right bk-c-secondary">
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- eighth -->
+                    <article class=" box b-c-g  search-finded-result">
+                        <a class="" href="#">
+                            <img src="./css/images/house1.jpeg" alt="">
+                            <div class="p-1 ">
+                                <small class="smallText ">2000 Euros</small>
+                                <p class=" m-t-1 fz-secondary-title">Beautifull house</p>
+                                
+                            </div>
+                            <div class="d-p-a  z-i-999 flex flex-center search-finded-result-layer
+                            search-finded-result-layer-center">
+                                <h3 class="fz-main-title t-primary-color f-w-600">Available</h3>
+                            </div>
+                            <div class="d-p-a d-p-a-0 search-finded-result-layer search-finded-result-layer-left bk-c-secondary">
+                            </div>
+                            <div class="d-p-a search-finded-result-layer search-finded-result-layer-right bk-c-secondary">
+                            </div>
+                        </a>
+                    </article>
+
+
                 </div>
-    </footer>
-         -->
+            </section>
+
+            <footer class="t-primary-color">
+                <div class="footer-1">
+                            <div class="footer-1_top">
+                                <ol>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#"><i class="fas fa-map-marker-alt fa-2x map"></i></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ol>
+                            </div>
+                            <div class="footer-1_bottom">
+                                <div class="footer_top_subscrive">
+                                    <h5><a href="#">
+                                        Subscrive
+                                    </a></h5>
+                                    <div class=" flex input">
+                                        <input type="text" placeholder="admin@rentingmalta.com">
+                                        <button class="main-button">Send</button>
+                                    </div>
+                                </div>
+                            
+                                <div class="footer_top_contact">
+                                    <h5><a href="#">
+                                        Contact</a>
+                                    </h5>
+                                    <a href="#">Have a question? </a><br>
+        
+                                <a href="#">
+                                    <span>admin@rentingmalta.com</span>
+                                </a>
+                                </div>
+                                <div class="footer_top_about">
+                                    <h5><a href="#"></a>
+                                    About</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        
+                                </div>
+                            </div>
+                        </div>
+        
+                <div class="footer-2 flex space-between">
+                            <ol class="flex space-between">
+                            <li> <a href="#"><i class="fab fa-linkedin fa-lg"></i></a></li>
+                            <li> <a href="#"><i class="fab fa-twitter-square fa-lg"></i></a></li>
+                            <li> <a href="#"><i class="fas fa-camera-retro fa-lg"></i></a></li>
+                            <li> <a href="#"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+                            <li> <a href="#"><i class="fab fa-instagram-square fa-lg"></i></a></li>
+                            </ol>   
+                            <div>
+                                <a href="#">Malta's Renting. All rights reserved</a>
+                            </div>
+                        </div>
+            </footer>
     </body>
 </html>
