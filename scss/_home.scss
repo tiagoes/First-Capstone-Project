@@ -60,53 +60,37 @@
 }
 // section 4
 
-
-
 .section4-grid {
         @include tablet {
            padding: s(1);
         }
-        @include desktop {
-        
+        .section4-card {
+            grid-template-columns: 60% auto;
+            gap: s(1);
+            @include tablet {
+                grid-template-columns:1fr;
+                grid-template-rows: 1fr auto;
+                padding: 0 0 s(0.5) 0;
+                @include box;
+                border-color: color(smallText-color);
+            }
+
+            .card-imag_container {
+                overflow: hidden;
+            
+                img {
+                    transition: 5s;
+                }
+                img:hover {
+                    transform: scale(5);
+                    transition: 10s;
+                
+                }
+            }
+
+            a:hover {
+                color: color(secondary-color);
+            }
+           
         }
-    }
-
-.section4-card {
-    grid-template-columns: 60% auto;
-    gap: s(1);
-    @include tablet {
-        grid-template-columns:1fr;
-        grid-template-rows: 1fr auto;
-        padding: 0 0 s(0.5) 0;
-        @include box;
-        border-color: color(smallText-color);
-    }
 }
-            
-//         }
-
-//         small {
-
-//             font-size: text(small-text);
-//         }
-
-//         div {
-//             a{
-
-//                 @include box;
-//                 margin-top: 10px;
-//                 display: inline-block;
-//                 padding: 5px;
-//                 border-radius: 50%;
-
-//                 &:hover {
-//                     color: color(secondary-color);
-//                     border-color: color(secondary-color);
-//                     transition: 0.5s;
-//                 }
-                   
-//              }
-            
-//         }
-//     }
-// }

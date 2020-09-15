@@ -13,7 +13,7 @@ $text-size: (
     "main-text": 1em,
     "small-text": 0.8em,
     "main-title": 2em,
-    "secondary-title": 1.2em
+    "secondary-title": 1.5em
 );
 
 $tablet: 768px;
@@ -111,13 +111,17 @@ $desktop: 1024px;
     position: absolute;
 }
 
+.d-p-f {
+    position: fixed;
+}
+
 .d-p-a-0 {
     top: 0;
     bottom: 0;
 };
 
-.p-b-0 {
-    bottom: 0;
+.d-t-0 {
+    top: 0;
 };
 
 .z-i-999 {
@@ -135,7 +139,7 @@ $desktop: 1024px;
     font-size: text(main-text);
 }
 
-.fz-main-title {
+.fz-m-ti {
     font-size: text(main-title);
 }
 
@@ -181,6 +185,10 @@ $desktop: 1024px;
     @include marginSection
 }
 
+.m-1 {
+    margin: s(1);
+}
+
 .m-t-1 {
     margin-top: s(1);
 }
@@ -208,17 +216,20 @@ $desktop: 1024px;
     margin-bottom: s(3);
 }
 
+// MARGIN RIGHT
+
+.m-r-1 {
+    margin-right: s(1);
+}
+
+
 // MARGIN Xxx
-.m-x-1 {
+.m-y-1 {
     margin: s(1) 0;
 }
 
-.m-x-2 {
+.m-y-2 {
     margin: s(2) 0;
-}
-
-.m-nav {
-    margin-top: s(7.375);
 }
 
 .m-center {
@@ -234,6 +245,10 @@ $desktop: 1024px;
 
 .p-1 {
     padding: s(1);
+}
+
+.p-15 {
+    padding: s(1.5);
 }
 
 .p-2 {
@@ -305,6 +320,12 @@ $desktop: 1024px;
    }
 }
 
+.row-t {
+    @include tablet {
+        flex-direction: row;
+    }
+}
+
 .row {
     flex-direction: row;
 }
@@ -314,16 +335,56 @@ $desktop: 1024px;
 }
 
 .column-t {
-    flex-direction: column;
+    @include tablet {
+        flex-direction: column;
+    }
 }
 
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-end {
+    @include tablet {
+        justify-content: flex-end;
+    }
+    
+}
 
 .space-between {
     justify-content: space-between;
 }
 
 .space-between-t {
-    justify-content: space-between;
+    @include tablet {
+        justify-content: space-between;
+    }
+}
+
+.space-evenly-t {
+    @include tablet {
+        justify-content: space-evenly;
+    }
+}
+
+.space-evenly {
+        justify-content: space-evenly;
+}
+
+
+
+.align-itmes-center-t {
+    @include tablet {
+        align-items: center;
+    }
+}
+
+.align-itmes-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
 }
 
 .flex-center {
