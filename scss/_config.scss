@@ -185,6 +185,13 @@ $desktop: 1024px;
     @include marginSection
 }
 
+.nav-maginSection {
+    margin-top: s(6.625);
+    @include tablet {
+        margin-top: s(3.5);
+    }
+}
+
 .m-1 {
     margin: s(1);
 }
@@ -201,9 +208,7 @@ $desktop: 1024px;
     margin-top: s(3);
 }
 
-.m-b-05 {
-    margin-bottom: s(0.5);
-}
+
 .m-b-1 {
     margin-bottom: s(1);
 }
@@ -214,6 +219,9 @@ $desktop: 1024px;
 
 .m-b-3 {
     margin-bottom: s(3);
+}
+.m-b-05 {
+    margin-bottom: s(0.5);
 }
 
 // MARGIN RIGHT
@@ -237,7 +245,9 @@ $desktop: 1024px;
 }
 
 // PADDING
-
+.p-0 {
+    padding: 0;
+}
 
 .p-05 {
     padding: s(0.5);
@@ -275,6 +285,37 @@ $desktop: 1024px;
 
 .p-x-3 {
     padding:0 s(3);
+}
+
+// Padding Top And Bottom
+.p-t-1 {
+    padding-top: s(1);
+}
+
+.p-t-2 {
+    padding-top: s(2);
+}
+
+.p-t-3 {
+    padding-top: s(3);
+}
+
+.p-t-4 {
+    padding-top: s(4);
+}
+
+// padding bottom
+.p-b-1 {
+    padding-bottom: s(1);
+}
+.p-b-2 {
+    padding-bottom: s(2);
+}
+.p-b-3 {
+    padding-bottom: s(3);
+}
+.p-b-4 {
+    padding-bottom: s(4);
 }
 
 // PADDING Yy
@@ -392,6 +433,10 @@ $desktop: 1024px;
     justify-content: center;
 }
 
+.space-around {
+    justify-content: space-around;
+}
+
 // grid
 .grid {
     display: grid;
@@ -428,19 +473,26 @@ $desktop: 1024px;
     }
 }
 
+.grid-c-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-c-3-t {
+    @include tablet{
+        grid-template-columns: 1fr 1fr 1fr;    
+    }
+}
+
 .grid-c-4-d {
     @include desktop {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-
 // border
-
 .b-c-g {
     border-color: color(smallText-color);
 }
 
-// 
 .opacity-1 {
     opacity: 1;
 }

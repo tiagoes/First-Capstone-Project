@@ -1,14 +1,14 @@
 
 
 .main-image_container {
-    margin-top: s(6.625);
+    // margin-top: s(6.625);
     background-image: url(./images/malta1.jpg);
     background-size: cover;
     background-position: left bottom;
     height: s(50);
-    @include tablet {
-        margin-top: s(3.5);
-    }
+    // @include tablet {
+    //     margin-top: s(3.5);
+    // }}
 
     &:hover .hidden {
         visibility: visible;

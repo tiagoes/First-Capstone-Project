@@ -1,15 +1,18 @@
 
 .search-image {
-    // background-image: url(./images/malta2.jpg);
-    // background-size: cover;
+    background-image: url(./images/malta1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    background-size: cover;
     // background-position: left bottom;
     // width: 80%;
     height: 550px;
-    transition: 5s;
+    // transition: 5s;
 
-    animation-name: searchAnimate;
+    animation-name: seachAnimate;
     animation-direction: alternate;
-    animation-duration: 60s;
+    animation-duration: 20s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: running;
@@ -39,14 +42,10 @@
 }
 
 .search-container {
-    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
 
     .search {
-        @include box;
         background-color: white;
         max-width: 600px;
         // margin-top: 300px;
